@@ -1,0 +1,162 @@
+/*SCSS Variables Begin*/
+/*SCSS Variables End*/
+body, html {
+  font-family: "Roboto", sans-serif; }
+
+.h1-line {
+  width: 75px;
+  height: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 42px; }
+
+button {
+  padding: 20px;
+  color: #f9f9f9;
+  background-color: #465c8d;
+  font-size: 1.3em;
+  font-weight: 900;
+  border: none; }
+
+/*Headings*/
+h1 {
+  font-size: 2.3em;
+  font-weight: 1.3em;
+  margin: 0px 0px 15px 0px; }
+
+h2 {
+  font-size: 1.7em;
+  font-weight: 1.3em;
+  margin-bottom: 5px; }
+
+/*Black Nav bar*/
+.sub-nav {
+  background-color: #0b0c0c;
+  height: 45px;
+  width: 100%;
+  color: #daeff3; }
+  .sub-nav ul {
+    float: right;
+    list-style: none;
+    margin: 10px 0px 11px 0px; }
+    .sub-nav ul li {
+      display: inline;
+      font-weight: 500;
+      font-size: 1.3em;
+      margin-left: 20px; }
+      .sub-nav ul li a {
+        color: #daeff3; }
+  .sub-nav .social-icons {
+    margin-top: 12px; }
+  .sub-nav .social-icons img {
+    display: inline;
+    height: 20px;
+    margin-right: 20px; }
+
+/*Main Nav*/
+nav {
+  height: 70px;
+  background-color: #daeff3; }
+  nav img {
+    height: 40px;
+    margin-top: 15px; }
+  nav ul {
+    float: right;
+    list-style: none;
+    margin: 22px 0px 11px 0px; }
+    nav ul li {
+      display: inline;
+      font-weight: 500;
+      font-size: 1.3em;
+      margin-left: 20px; }
+      nav ul li a {
+        color: #0b0c0c; }
+
+/*Header*/
+header {
+  height: 478px;
+  background-color: #465c8d;
+  color: #f9f9f9; }
+  header span {
+    font-size: 3.5em;
+    font-weight: 500;
+    position: absolute;
+    margin-top: 106px; }
+  header .line {
+    width: 109px;
+    height: 8px;
+    background-color: #f9f9f9;
+    margin-top: 333px;
+    position: absolute; }
+  header #particles-js {
+    height: 100%; }
+
+/*Black What we do section*/
+aside {
+  width: 375px;
+  height: 606px;
+  background-color: #0b0c0c;
+  position: absolute;
+  right: 0;
+  margin: 47px 15px 0px 0px;
+  padding: 28px;
+  color: #f9f9f9; }
+  aside img {
+    width: 45px; }
+  aside p {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 0;
+    line-height: 1.5em;
+    color: #f9f9f9;
+    position: relative; }
+    aside p:first-of-type {
+      margin-bottom: 50px; }
+
+/*Who we are section*/
+.about {
+  height: 773px;
+  background-color: #daeff3; }
+
+/*Black rectangle with white inner*/
+.black-rec {
+  width: 480px;
+  height: 296px;
+  background-color: #0b0c0c;
+  color: #f9f9f9;
+  padding: 50px;
+  margin-top: -50px;
+  position: absolute; }
+  .black-rec .inner {
+    height: 480px;
+    width: 480px;
+    background-color: #f9f9f9;
+    margin-left: 116px;
+    margin-top: 22px;
+    padding: 70px; }
+    .black-rec .inner p {
+      color: #0b0c0c;
+      font-size: 1.3em; }
+    .black-rec .inner button {
+      margin-top: 20px; }
+
+/*Our work section*/
+.our-work {
+  height: 1600px;
+  background-color: #465c8d; }
+
+/*Media Queries*/
+@media (max-width: 1200px) {
+  nav ul li, .sub-nav ul li, aside p {
+    font-size: 1.2em; }
+
+  aside {
+    width: calc(375px - 10%);
+    max-height: calc(606px - 20%); }
+
+  header span {
+    font-size: 2.8em; }
+
+  header .line {
+    margin-top: 290px; } }
+
+/*# sourceMappingURL=main.css.map */

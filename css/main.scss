@@ -1,0 +1,230 @@
+/*SCSS Variables Begin*/
+
+$black: #0b0c0c;
+$white: #f9f9f9;
+$light-blue: #daeff3;
+$dark-blue: #465c8d;
+$font: 'Roboto', sans-serif;
+$font-reg: 1.3em;
+$medium: 500;
+
+/*SCSS Variables End*/
+
+body, html	{
+	font-family: $font;
+}
+
+.h1-line {
+	width: 75px;
+	height: 5px;
+	background-color: $white;
+	margin-bottom: 42px;
+}
+
+button {
+	padding: 20px;
+	color: $white;
+	background-color: $dark-blue;
+	font-size: $font-reg;
+	font-weight: 900;
+	border: none;
+}
+
+/*Headings*/
+h1 {
+	font-size: 2.3em;
+	font-weight: $font-reg;
+	margin: 0px 0px 15px 0px;
+}
+
+h2 {
+	font-size: 1.7em;
+	font-weight: $font-reg;
+	margin-bottom: 5px;
+}
+
+/*Black Nav bar*/
+.sub-nav {
+	background-color: $black;
+	height: 45px;
+	width: 100%;
+	color: $light-blue;
+
+	ul {
+		float: right;
+	    list-style: none;
+	    margin: 10px 0px 11px 0px;
+
+	    li {
+	    	display: inline;
+	    	font-weight: $medium;
+	    	font-size: $font-reg;
+	    	margin-left: 20px;
+
+	    	a {	
+	    		color: $light-blue;
+	    	}
+	    }
+	}
+
+	.social-icons {
+		margin-top: 12px;
+	}
+
+	.social-icons img {
+		display: inline;
+		height: 20px;
+		margin-right: 20px;
+	}
+}
+
+/*Main Nav*/
+nav {
+	height: 70px;
+	background-color: $light-blue;
+
+	img {
+		height: 40px;
+		margin-top: 15px;
+	}
+
+	ul {
+		float: right;
+		list-style: none;
+		margin: 22px 0px 11px 0px;
+
+		li {
+			display: inline;
+			font-weight: $medium;
+			font-size: $font-reg;
+			margin-left: 20px;
+
+	    	a {	
+	    		color: $black;
+
+	    		&:hover {
+	    			
+	    		}
+	    	}
+		}
+	}
+}
+
+/*Header*/
+header {
+	height: 478px;
+	background-color: $dark-blue;
+	color: $white;
+
+	span {
+		font-size: 3.5em;
+		font-weight: $medium;
+		position: absolute;
+		margin-top: 106px;
+	}
+
+	.line {
+		width: 109px;
+		height: 8px;
+		background-color: $white;
+		margin-top: 333px;
+		position: absolute;
+	}
+
+	#particles-js {
+		height: 100%;
+	}
+}
+
+/*Black What we do section*/
+aside {
+	width: 375px;
+	height: 606px;
+	background-color: $black;
+	position: absolute;
+	right:0;
+	margin: 47px 15px 0px 0px;
+	padding: 28px;
+	color: $white;
+
+	img {
+		width: 45px;
+	}
+
+	p {
+		font-size: $font-reg;
+		font-weight: 400;
+		margin-top: 0;
+		line-height: 1.5em;
+		color: $white;
+		position: relative;
+
+		&:first-of-type {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+/*Who we are section*/
+
+.about {
+	height: 773px;
+	background-color: $light-blue;
+}
+
+/*Black rectangle with white inner*/
+.black-rec {
+	width: 480px;
+	height: 296px;
+	background-color: $black;
+	color: $white;
+	padding: 50px;
+	margin-top: -50px;
+	position: absolute;
+
+	.inner {
+		height: 480px;
+		width: 480px;
+		background-color: $white;
+		margin-left: 116px;
+		margin-top: 22px;
+		padding: 70px;
+
+		p {
+			color: $black;
+			font-size: $font-reg;
+		}
+
+		button {
+			margin-top: 20px;
+		}
+	}
+}
+
+/*Our work section*/
+.our-work {
+	height: 1600px;
+	background-color: $dark-blue;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 1200px) {
+	nav ul li, .sub-nav ul li, aside p {
+		font-size: 1.2em;
+	}
+
+	aside {
+		width: calc(375px - 10%);
+		max-height: calc(606px - 20%);
+	}
+
+	header span {
+		font-size: 2.8em;
+	}
+
+	header .line {
+		margin-top: 290px;
+	}
+}
